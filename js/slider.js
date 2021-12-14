@@ -12,7 +12,7 @@ var propSlider = {
 // Metodos slider
 var metSlider = {
     inicio: function () {
-        setInterval(metSlider.moverSlide, 3000);
+        setInterval(metSlider.moverSlide, 4000);
         // Esto hace funcionar al slider de manera automática.
     },
     moverSlide: function () {

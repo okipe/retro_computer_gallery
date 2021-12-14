@@ -11,8 +11,8 @@
 @gris-claro: #eaeaea; 
 
 /*Fuentes*/
-@fuente-principal: 'Playfair Display', serif;
-@fuente-secundaria: 'Poppins', serif;
+@fuente-principal: 'Enriqueta', serif;
+@fuente-titulo: 'Raleway', Sans-Serif;
 
 /*--------------------------*/
 /*Generales*/
@@ -116,12 +116,14 @@ header {
         border-bottom: 1px solid @gris-claro;
 
         .logo{
-            max-width: 3.125rem;
+            max-width: 6.125rem;
         }
 
         .menu-principal{
             a{
                 padding: 0 0.5625rem;
+                font-family: @fuente-titulo;
+                font-weight: 800;
             }
         }
 
@@ -186,6 +188,7 @@ header {
                     display: block;
                     padding: 0.625rem 0;
                     border-top: 1px solid @gris-claro;
+                    font-family: @fuente-titulo;
             }
         }
     }
@@ -201,6 +204,110 @@ header {
 
     /* Portada */
     .portada {
+        background: @negro-custom;
+        padding: 5.625rem 0;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .col{
+                width: 50%;
+
+                &.izq {
+                    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
+                    overflow: hidden;
+                }
+
+                .titulo-seccion {
+                    padding: 3.125rem;
+                    padding-right: 0;
+
+                    h2 {
+                        color: @blanco;
+                    }
+
+                    p {
+                        color: fade(@blanco, 70%);
+                        padding-bottom: 1.125rem;
+                        font-size: 1.125rem;
+                        line-height: 1.75;
+
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+
+                .slider {
+                    width: 400%;
+                    display: flex;
+
+                    .slide {
+                        width: 100%;
+                        min-height: 400px;
+                        background-size: cover;
+                        background-position: center;
+
+                        &.foto1{
+                            background-image: url('../img/slider_1.jpg');
+                        }
+
+                        &.foto2{
+                            background-image: url('../img/slider_2.jpg');
+                        }
+
+                        &.foto3{
+                            background-image: url('../img/slider_3.jpg');
+                        }
+
+                        &.foto4{
+                            background-image: url('../img/slider_4.jpg');
+                        }
+                    }
+                }
+
+            }
+        }      
+    } /* Portada */
+
+    /* Nosotros */
+    .nosotros {
+        padding: 5.625rem 0;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .col.izq {
+                width: 30%;
+                border-right: 1px solid @gris-claro;
+                display: flex;
+                align-items: center;
+                padding-right: 5%;
+            }
+
+            .col.der {
+                width: 70%;
+                padding-left: 5%;
+
+                .texto {
+                    p {
+                        font-size: 1.125rem;
+                        line-height: 1.75;
+                        color: @texto-claro;
+                    }
+                }
+            }
+        }
+
+    } /* Nosotros */
+
+    /* Atributos */
+    .atributos {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -311,108 +418,7 @@ header {
                 }
             }
         }
-    } /* Portada */
-
-    /* Nosotros */
-    .nosotros {
-        padding: 5.625rem 0;
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            .col.izq {
-                width: 30%;
-                border-right: 1px solid @gris-claro;
-                display: flex;
-                align-items: center;
-                padding-right: 5%;
-            }
-
-            .col.der {
-                width: 70%;
-                padding-left: 5%;
-
-                .texto {
-                    p {
-                        font-size: 1.125rem;
-                        line-height: 1.75;
-                        color: @texto-claro;
-                    }
-                }
-            }
-        }
-
-    } /* Nosotros */
-
-
-    /* Nuestro chef */
-    .chef {
-        background: @negro-custom;
-        padding: 5.625rem 0;
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-
-            .col{
-                width: 50%;
-
-                &.izq {
-                    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
-                    overflow: hidden;
-                }
-
-                .titulo-seccion {
-                    padding: 3.125rem;
-                    padding-right: 0;
-
-                    h2 {
-                        color: @blanco;
-                    }
-
-                    p {
-                        color: fade(@blanco, 70%);
-                        padding-bottom: 1.125rem;
-                        font-size: 1.125rem;
-                        line-height: 1.75;
-
-                        &:last-child {
-                            padding-bottom: 0;
-                        }
-                    }
-                }
-
-                .slider {
-                    width: 300%;
-                    display: flex;
-
-                    .slide {
-                        width: 100%;
-                        min-height: 400px;
-                        background-size: cover;
-                        background-position: center;
-
-                        &.foto1{
-                            background-image: url('../img/chef-1.jpg');
-                        }
-
-                        &.foto2{
-                            background-image: url('../img/chef-2.jpg');
-                        }
-
-                        &.foto3{
-                            background-image: url('../img/chef-3.jpg');
-                        }
-                    }
-                }
-
-            }
-        }      
-    } /* Nuestro chef */
+    } /* Atributos */
 
     /* Nuestro menú */
     .menu-platos {
@@ -430,7 +436,7 @@ header {
 
                 .encabezado {
                     font-weight: 600;
-                    font-family: @fuente-secundaria;
+                    font-family: @fuente-titulo;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
                     list-style: none;
@@ -586,7 +592,7 @@ header {
                     input[type="text"],
                     input[type="email"],
                     textarea {
-                        font-family: @fuente-secundaria;
+                        font-family: @fuente-titulo;
                         font-size: 1rem;
                         color: @texto-oscuro;
                         width: 100%;
@@ -611,7 +617,7 @@ header {
 
                     label {
                         color: @texto-claro;
-                        font-family: @fuente-secundaria;
+                        font-family: @fuente-titulo;
 
                         &.label {
                             position: absolute;
@@ -637,13 +643,13 @@ header {
                     .error {
                         position: absolute;
                         color: rgb(255,59,59);
-                        font-family: @fuente-secundaria;
+                        font-family: @fuente-titulo;
                         font-size: 0.875rem;
                     }
                 }
 
                 input[type="submit"] {
-                    font-family: @fuente-secundaria;
+                    font-family: @fuente-titulo;
                     background: @dorado;
                     color: @blanco;
                     border-radius: 1px;

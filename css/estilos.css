@@ -15,7 +15,7 @@
 }
 body {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Enriqueta', serif;
   color: #303133;
 }
 .container {
@@ -94,6 +94,8 @@ header .menu-bar-pc .logo {
 }
 header .menu-bar-pc .menu-principal a {
   padding: 0 0.5625rem;
+  font-family: 'Raleway', Sans-Serif;
+  font-weight: 800;
 }
 header .menu-bar-pc .top-redes a {
   padding: 0 0.5625rem;
@@ -144,6 +146,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   display: block;
   padding: 0.625rem 0;
   border-top: 1px solid #eaeaea;
+  font-family: 'Raleway', Sans-Serif;
 }
 /*--------------------------*/
 /*Main*/
@@ -154,107 +157,67 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   /* Portada */
   /* Nosotros */
   /* Nosotros */
-  /* Nuestro chef */
-  /* Nuestro chef */
+  /* Atributos */
+  /* Atributos */
   /* Nuestro menú */
   /* Nuestro menú */
   /* Contacto */
   /* Contacto */
 }
 .main .portada {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.main .portada .col {
-  width: 50%;
   background: #141618;
-  color: #fff;
+  padding: 5.625rem 0;
+}
+.main .portada .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
-.main .portada .col .foto {
-  background-size: cover;
-  background-position: center;
+.main .portada .container .col {
   width: 50%;
 }
-.main .portada .col .foto.izq {
-  background-image: url('../img/portada-1.jpg');
-  background-position: left;
+.main .portada .container .col.izq {
+  box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
-.main .portada .col .foto.der {
-  background-image: url('../img/portada-4.jpg');
-  opacity: 0.8;
+.main .portada .container .col .titulo-seccion {
+  padding: 3.125rem;
+  padding-right: 0;
 }
-.main .portada .col .foto .overlay {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 22, 24, 0.4);
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.main .portada .container .col .titulo-seccion h2 {
+  color: #fff;
 }
-.main .portada .col .foto .overlay:hover {
-  opacity: 1;
-}
-.main .portada .col .foto .overlay i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5625rem;
-}
-.main .portada .col .texto {
-  width: 50%;
-  padding: 3.375rem;
-}
-.main .portada .col .texto h2 {
-  font-size: 1.8125rem;
-  font-weight: 400;
-  line-height: 2.6875rem;
-  margin-bottom: 1.125rem;
-}
-.main .portada .col .texto p {
-  font-size: 0.9375rem;
+.main .portada .container .col .titulo-seccion p {
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 1.125rem;
+  font-size: 1.125rem;
   line-height: 1.75;
 }
-.main .portada .col .foto-full {
+.main .portada .container .col .titulo-seccion p:last-child {
+  padding-bottom: 0;
+}
+.main .portada .container .col .slider {
+  width: 400%;
+  display: flex;
+}
+.main .portada .container .col .slider .slide {
   width: 100%;
-  min-height: 15.25rem;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
 }
-.main .portada .col .foto-full.izq {
-  background-image: url('../img/portada-2.jpg');
-  opacity: 0.8;
+.main .portada .container .col .slider .slide.foto1 {
+  background-image: url('../img/slider_1.jpg');
 }
-.main .portada .col .foto-full.der {
-  background-image: url('../img/portada-3.jpg');
-  opacity: 0.8;
+.main .portada .container .col .slider .slide.foto2 {
+  background-image: url('../img/slider_2.jpg');
 }
-.main .portada .col .foto-full .overlay {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 22, 24, 0.4);
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.main .portada .container .col .slider .slide.foto3 {
+  background-image: url('../img/slider_3.jpg');
 }
-.main .portada .col .foto-full .overlay:hover {
-  opacity: 1;
-}
-.main .portada .col .foto-full .overlay i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5625rem;
+.main .portada .container .col .slider .slide.foto4 {
+  background-image: url('../img/slider_4.jpg');
 }
 .main .nosotros {
   padding: 5.625rem 0;
@@ -280,57 +243,100 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   line-height: 1.75;
   color: #777;
 }
-.main .chef {
-  background: #141618;
-  padding: 5.625rem 0;
-}
-.main .chef .container {
+.main .atributos {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-between;
 }
-.main .chef .container .col {
+.main .atributos .col {
+  width: 50%;
+  background: #141618;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .atributos .col .foto {
+  background-size: cover;
+  background-position: center;
   width: 50%;
 }
-.main .chef .container .col.izq {
-  box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+.main .atributos .col .foto.izq {
+  background-image: url('../img/portada-1.jpg');
+  background-position: left;
 }
-.main .chef .container .col .titulo-seccion {
-  padding: 3.125rem;
-  padding-right: 0;
+.main .atributos .col .foto.der {
+  background-image: url('../img/portada-4.jpg');
+  opacity: 0.8;
 }
-.main .chef .container .col .titulo-seccion h2 {
-  color: #fff;
+.main .atributos .col .foto .overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 22, 24, 0.4);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.main .chef .container .col .titulo-seccion p {
-  color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 1.125rem;
-  font-size: 1.125rem;
+.main .atributos .col .foto .overlay:hover {
+  opacity: 1;
+}
+.main .atributos .col .foto .overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5625rem;
+}
+.main .atributos .col .texto {
+  width: 50%;
+  padding: 3.375rem;
+}
+.main .atributos .col .texto h2 {
+  font-size: 1.8125rem;
+  font-weight: 400;
+  line-height: 2.6875rem;
+  margin-bottom: 1.125rem;
+}
+.main .atributos .col .texto p {
+  font-size: 0.9375rem;
   line-height: 1.75;
 }
-.main .chef .container .col .titulo-seccion p:last-child {
-  padding-bottom: 0;
-}
-.main .chef .container .col .slider {
-  width: 300%;
-  display: flex;
-}
-.main .chef .container .col .slider .slide {
+.main .atributos .col .foto-full {
   width: 100%;
-  min-height: 400px;
+  min-height: 15.25rem;
   background-size: cover;
   background-position: center;
 }
-.main .chef .container .col .slider .slide.foto1 {
-  background-image: url('../img/chef-1.jpg');
+.main .atributos .col .foto-full.izq {
+  background-image: url('../img/portada-2.jpg');
+  opacity: 0.8;
 }
-.main .chef .container .col .slider .slide.foto2 {
-  background-image: url('../img/chef-2.jpg');
+.main .atributos .col .foto-full.der {
+  background-image: url('../img/portada-3.jpg');
+  opacity: 0.8;
 }
-.main .chef .container .col .slider .slide.foto3 {
-  background-image: url('../img/chef-3.jpg');
+.main .atributos .col .foto-full .overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 22, 24, 0.4);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main .atributos .col .foto-full .overlay:hover {
+  opacity: 1;
+}
+.main .atributos .col .foto-full .overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5625rem;
 }
 .main .menu-platos {
   padding: 5.625rem 0;
@@ -343,7 +349,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .menu-platos .container .contenedor-menu .encabezado {
   font-weight: 600;
-  font-family: 'Poppins', serif;
+  font-family: 'Raleway', Sans-Serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   list-style: none;
@@ -466,7 +472,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 .main .contacto .formulario .formulario_contacto .input-group input[type="text"],
 .main .contacto .formulario .formulario_contacto .input-group input[type="email"],
 .main .contacto .formulario .formulario_contacto .input-group textarea {
-  font-family: 'Poppins', serif;
+  font-family: 'Raleway', Sans-Serif;
   font-size: 1rem;
   color: #303133;
   width: 100%;
@@ -490,7 +496,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .contacto .formulario .formulario_contacto .input-group label {
   color: #777;
-  font-family: 'Poppins', serif;
+  font-family: 'Raleway', Sans-Serif;
 }
 .main .contacto .formulario .formulario_contacto .input-group label.label {
   position: absolute;
@@ -513,11 +519,11 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 .main .contacto .formulario .formulario_contacto .input-group .error {
   position: absolute;
   color: #ff3b3b;
-  font-family: 'Poppins', serif;
+  font-family: 'Raleway', Sans-Serif;
   font-size: 0.875rem;
 }
 .main .contacto .formulario .formulario_contacto input[type="submit"] {
-  font-family: 'Poppins', serif;
+  font-family: 'Raleway', Sans-Serif;
   background: #b4975a;
   color: #fff;
   border-radius: 1px;
