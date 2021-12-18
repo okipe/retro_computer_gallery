@@ -74,6 +74,34 @@ a:hover {
   cursor: pointer;
 }
 /*--------------------------*/
+/*Loading*/
+/*--------------------------*/
+.loader {
+  position: fixed;
+  z-index: 105;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.loader > img {
+  width: 4.25rem;
+}
+.loader.oculto {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*--------------------------*/
 /*Encabezado*/
 /*--------------------------*/
 header .menu-bar-pc {
@@ -88,15 +116,16 @@ header .menu-bar-pc {
   justify-content: space-between;
   align-items: center;
   min-height: 5.875rem;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #1FC742;
 }
 header .menu-bar-pc .logo {
   max-width: 6.125rem;
 }
 header .menu-bar-pc .menu-principal a {
-  padding: 0 0.5625rem;
   font-family: 'Raleway', Sans-Serif;
   font-weight: 800;
+  color: #025b18;
+  padding: 0 0.5625rem;
 }
 header .menu-bar-pc .top-redes a {
   padding: 0 0.5625rem;
@@ -113,10 +142,10 @@ header .menu-bar-movil {
   justify-content: space-between;
   align-items: center;
   min-height: 5.875rem;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #1FC742;
 }
 header .menu-bar-movil .logo {
-  max-width: 3.125rem;
+  max-width: 6.125rem;
 }
 header .menu-bar-movil .burger-menu {
   cursor: pointer;
@@ -146,7 +175,7 @@ header .menu-bar-movil .slideMenu .top-redes a {
 header .menu-bar-movil .slideMenu .menu-principal a {
   display: block;
   padding: 0.625rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #1FC742;
 }
 /*--------------------------*/
 /*Main*/
@@ -159,8 +188,8 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   /* Nosotros */
   /* Atributos */
   /* Atributos */
-  /* Nuestro menú */
-  /* Nuestro menú */
+  /* Los eventos por días */
+  /* Los eventos por días */
   /* Contacto */
   /* Contacto */
 }
@@ -230,7 +259,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .nosotros .container .col.izq {
   width: 30%;
-  border-right: 1px solid #eaeaea;
+  border-right: 1px solid #1FC742;
   display: flex;
   align-items: center;
   padding-right: 5%;
@@ -368,17 +397,17 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   border-bottom: 2px solid transparent;
 }
 .main .eventos-dias .container .contenedor-dias .encabezado li a:hover {
-  color: #b4975a;
+  color: #025b18;
 }
 .main .eventos-dias .container .contenedor-dias .encabezado li.active a {
-  color: #b4975a;
-  border-bottom: 2px solid #b4975a;
+  color: #025b18;
+  border-bottom: 2px solid #025b18;
 }
 .main .eventos-dias .container .contenedor-dias .contenido {
   max-width: 50rem;
   margin: 0 auto;
   margin-top: 2.5rem;
-  border: 6px double #eaeaea;
+  border: 6px double #1FC742;
   padding: 0 2.25rem;
 }
 .main .eventos-dias .container .contenedor-dias .contenido > div {
@@ -396,7 +425,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   flex-wrap: wrap;
   align-items: center;
   padding: 2.25rem 0;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #025b18;
 }
 .main .eventos-dias .container .contenedor-dias .contenido .item .col.izq {
   width: 70%;
@@ -440,7 +469,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .contacto .datos .container .blurb {
   background: #fff;
-  border: 6px double #eaeaea;
+  border: 6px double #1FC742;
   padding: 2.25rem;
   text-align: center;
   width: 25%;
@@ -484,13 +513,13 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   padding: 0.9375rem 0;
   background: none;
   border: none;
-  border-bottom: 2px solid rgba(180, 151, 90, 0.5);
+  border-bottom: 2px solid rgba(2, 91, 24, 0.5);
   vertical-align: top;
 }
 .main .contacto .formulario .formulario_contacto .input-group input[type="text"]:focus,
 .main .contacto .formulario .formulario_contacto .input-group input[type="email"]:focus,
 .main .contacto .formulario .formulario_contacto .input-group textarea:focus {
-  border-bottom: 2px solid #b4975a;
+  border-bottom: 2px solid #025b18;
 }
 .main .contacto .formulario .formulario_contacto .input-group textarea {
   max-width: 100%;
@@ -528,7 +557,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .contacto .formulario .formulario_contacto input[type="submit"] {
   font-family: 'Raleway', Sans-Serif;
-  background: #b4975a;
+  background: #025b18;
   color: #fff;
   border-radius: 1px;
   border: 2px solid #fff;
@@ -542,7 +571,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   transition: all 0.3s ease;
 }
 .main .contacto .formulario .formulario_contacto input[type="submit"]:hover {
-  background: #977c44;
+  background: #01290b;
 }
 /*--------------------------*/
 /* Pie de página */
@@ -565,7 +594,7 @@ footer .bottom-redes a {
   transition: all 0.3s ease;
 }
 footer .bottom-redes a:hover {
-  color: #b4975a;
+  color: #025b18;
 }
 /*--------------------------*/
 /* Media Queries */
