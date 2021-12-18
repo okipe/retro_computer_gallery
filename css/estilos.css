@@ -339,16 +339,16 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   transform: translate(-50%, -50%);
   font-size: 1.5625rem;
 }
-.main .menu-platos {
+.main .eventos-dias {
   padding: 5.625rem 0;
 }
-.main .menu-platos .container .titulo-seccion h2 {
+.main .eventos-dias .container .titulo-seccion h2 {
   text-align: center;
 }
-.main .menu-platos .container .contenedor-menu {
+.main .eventos-dias .container .contenedor-dias {
   margin-top: 2.5rem;
 }
-.main .menu-platos .container .contenedor-menu .encabezado {
+.main .eventos-dias .container .contenedor-dias .encabezado {
   font-weight: 600;
   font-family: 'Raleway', Sans-Serif;
   letter-spacing: 0.1em;
@@ -357,7 +357,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   display: flex;
   justify-content: center;
 }
-.main .menu-platos .container .contenedor-menu .encabezado li a {
+.main .eventos-dias .container .contenedor-dias .encabezado li a {
   font-size: 0.75rem;
   padding: 0 1.4375rem 1.125rem 1.475rem;
   display: block;
@@ -367,30 +367,30 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
 }
-.main .menu-platos .container .contenedor-menu .encabezado li a:hover {
+.main .eventos-dias .container .contenedor-dias .encabezado li a:hover {
   color: #b4975a;
 }
-.main .menu-platos .container .contenedor-menu .encabezado li.active a {
+.main .eventos-dias .container .contenedor-dias .encabezado li.active a {
   color: #b4975a;
   border-bottom: 2px solid #b4975a;
 }
-.main .menu-platos .container .contenedor-menu .contenido {
+.main .eventos-dias .container .contenedor-dias .contenido {
   max-width: 50rem;
   margin: 0 auto;
   margin-top: 2.5rem;
   border: 6px double #eaeaea;
   padding: 0 2.25rem;
 }
-.main .menu-platos .container .contenedor-menu .contenido > div {
+.main .eventos-dias .container .contenedor-dias .contenido > div {
   display: none;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.main .menu-platos .container .contenedor-menu .contenido .active {
+.main .eventos-dias .container .contenedor-dias .contenido .active {
   display: block;
 }
-.main .menu-platos .container .contenedor-menu .contenido .item {
+.main .eventos-dias .container .contenedor-dias .contenido .item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -398,19 +398,19 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   padding: 2.25rem 0;
   border-bottom: 1px solid #eaeaea;
 }
-.main .menu-platos .container .contenedor-menu .contenido .item .col.izq {
+.main .eventos-dias .container .contenedor-dias .contenido .item .col.izq {
   width: 70%;
 }
-.main .menu-platos .container .contenedor-menu .contenido .item .col.izq h3 {
+.main .eventos-dias .container .contenedor-dias .contenido .item .col.izq h3 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0.625rem;
 }
-.main .menu-platos .container .contenedor-menu .contenido .item .col.izq p {
+.main .eventos-dias .container .contenedor-dias .contenido .item .col.izq p {
   font-size: 1rem;
   color: #777;
 }
-.main .menu-platos .container .contenedor-menu .contenido .item .col.der {
+.main .eventos-dias .container .contenedor-dias .contenido .item .col.der {
   width: 30%;
   text-align: center;
   font-size: 2.1875rem;
@@ -465,6 +465,9 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   padding: 2.25rem;
   margin-top: -6.25rem;
   width: 90%;
+}
+.main .contacto .formulario .titulo-seccion h2 {
+  text-align: center;
 }
 .main .contacto .formulario .formulario_contacto .input-group {
   position: relative;
@@ -568,16 +571,16 @@ footer .bottom-redes a:hover {
 /* Media Queries */
 /*--------------------------*/
 @media all and (max-width: 1500px) {
-  .main .portada .col .texto {
+  .main .atributos .col .texto {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
   }
 }
 @media all and (max-width: 1199px) {
-  .main .portada .col .foto {
+  .main .atributos .col .foto {
     display: none;
   }
-  .main .portada .col .texto {
+  .main .atributos .col .texto {
     width: 100%;
   }
 }
@@ -613,22 +616,22 @@ footer .bottom-redes a:hover {
   header .menu-bar-movil {
     display: flex;
   }
-  .main .portada .col {
+  .main .atributos .col {
     width: 100%;
   }
-  .main .portada .col .foto-full.izq {
+  .main .atributos .col .foto-full.izq {
     display: none;
   }
-  .main .portada .col .texto h2 {
+  .main .atributos .col .texto h2 {
     text-align: center;
   }
-  .main .portada .col .texto p {
+  .main .atributos .col .texto p {
     text-align: justify;
   }
-  .main .chef .container .col {
+  .main .portada .container .col {
     width: 100%;
   }
-  .main .chef .container .col .titulo-seccion {
+  .main .portada .container .col .titulo-seccion {
     padding-left: 0;
     padding-bottom: 0;
     text-align: center;
@@ -641,15 +644,15 @@ footer .bottom-redes a:hover {
   .main .nosotros .container .col.der .texto p {
     font-size: 1rem;
   }
-  .main .chef .container .col .titulo-seccion p {
+  .main .portada .container .col .titulo-seccion p {
     font-size: 1rem;
   }
-  .main .menu-platos .container .contenedor-menu .contenido .item .col.izq {
+  .main .eventos-dias .container .contenedor-dias .contenido .item .col.izq {
     width: 100%;
     text-align: center;
     margin-bottom: 0.625rem;
   }
-  .main .menu-platos .container .contenedor-menu .contenido .item .col.der {
+  .main .eventos-dias .container .contenedor-dias .contenido .item .col.der {
     width: 100%;
   }
   .main .contacto .formulario .formulario_contacto input[type="submit"] {

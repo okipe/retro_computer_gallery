@@ -4,11 +4,11 @@
 
 var propTabs = {
 
-    primer_encabezado: document.getElementById('encabezado_menu').firstElementChild,
-    primer_contenido: document.getElementById('contenido_menu').firstElementChild,
-    enlaces_encabezado: document.querySelectorAll('#encabezado_menu li a'),
-    li_encabezado: document.querySelectorAll('#encabezado_menu li'),
-    divs_contenido: document.querySelectorAll('#contenido_menu > div'),
+    primer_encabezado: document.getElementById('encabezado_dias').firstElementChild,
+    primer_contenido: document.getElementById('contenido_dias').firstElementChild,
+    enlaces_encabezado: document.querySelectorAll('#encabezado_dias li a'),
+    li_encabezado: document.querySelectorAll('#encabezado_dias li'),
+    divs_contenido: document.querySelectorAll('#contenido_dias > div'),
     contenido_activo: null
 }
 
