@@ -1,9 +1,9 @@
 # Retro Computer Gallery Project
 
 ## Descripción
-En este proyecto, se ha creado una página web denominada "Retro Computer Gallery Project", el cual tiene 8 scritps, entre ellos una pantalla de carga (loader.js), un lightbox, un slider y otros más, tal como se muestra en los pantallazos de abajo. El editor usado fue Visual Studio Code y para el CSS, se empleó Less.
+En este proyecto, se ha creado una página web denominada **Retro Computer Gallery Project**, el cual tiene 8 scritps, entre ellos una pantalla de carga (loader.js), un lightbox, un slider y otros más, tal como se muestra en los pantallazos de abajo. El editor usado fue Visual Studio Code y para el CSS, se empleó Less.
 
-El proyecto fue creado para el curso Fundamentos de Javascript, dictado por el profesor Sergio Agamez Negrete, en Crehana.
+El proyecto fue creado para el curso **Fundamentos de Javascript**, dictado por el profesor Sergio Agamez Negrete, en Crehana.
 
 ![Editor VS Code con archivos HTML y Less.](/img_md/html_less.png)
 
@@ -30,11 +30,13 @@ Una vez terminada la página, se cargó en Surge mediante consola.
 - El uso de Javascript se orientó a los efectos visuales, escroll de las página, banners deslizantes y pestañas.
 
 ## Resultados
+Versión desktop:
 ![Página en versión escritorio](/img_md/webpage_desktop.png)
 
+Versión mobile:
 ![Página en versión móvil](/img_md/webpage_mobile.png)
 
-El sitio está disponible en ![Surge](https://retrocomputer-gallery.surge.sh/)
+El sitio está [disponible en Surge](https://retrocomputer-gallery.surge.sh/)
 
 ## Comentarios finales
 El curso representó mi primer acercamiento a Javascript. A continuación, el comentario brindado en mi presentación de Crehana.
