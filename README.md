@@ -45,4 +45,4 @@ El curso representó mi primer acercamiento a Javascript. A continuación, el co
 
 Este curso me ha permitido tener mi primera experiencia con un lenguaje de programación (el Javascript sí es un lenguaje de programación, a diferencia de HTML y CSS), comprender más el trabajo de los desarrolladores front-end y armar animaciones de sitios web. Ello me permitirá conocer y practicar más, y pienso más adelante aprender las nuevas versiones de Javascript que se lanzarán el próximo año, así como bibliotecas y frameworks de Javascript. 🚀🚀 He disfrutado mucho haciendo este trabajo.
 
-![Proyecto en Crehana](https://www.crehana.com/proyecto/oscarroman-pe/267322/retro-computer-gallery-project)
+[Proyecto en Crehana](https://www.crehana.com/proyecto/oscarroman-pe/267322/retro-computer-gallery-project)
