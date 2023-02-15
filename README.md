@@ -31,9 +31,11 @@ Una vez terminada la página, se cargó en Surge mediante consola.
 
 ## Resultados
 Versión desktop:
+
 ![Página en versión escritorio](/img_md/webpage_desktop.png)
 
 Versión mobile:
+
 ![Página en versión móvil](/img_md/webpage_mobile.png)
 
 El sitio está [disponible en Surge](https://retrocomputer-gallery.surge.sh/)
