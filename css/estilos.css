@@ -1,10 +1,8 @@
-/*---------------------------*/
-/* Variables */
-/*---------------------------*/
-/*Colores*/
-/*Fuentes*/
+/**************************************************/
+/* Hecho por Oscar Israel Román Quispe. 2021-2023 */
+/**************************************************/
 /*--------------------------*/
-/*Generales*/
+/* Generales */
 /*--------------------------*/
 * {
   margin: 0;
@@ -182,123 +180,118 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 /*--------------------------*/
 .main {
   margin-top: 5.875rem;
-  /* Portada */
-  /* Portada */
-  /* Nosotros */
-  /* Nosotros */
-  /* Atributos */
-  /* Atributos */
-  /* Los eventos por días */
-  /* Los eventos por días */
-  /* Contacto */
-  /* Contacto */
 }
-.main .portada {
+/* Portada */
+.portada {
   background: #141618;
   padding: 5.625rem 0;
 }
-.main .portada .container {
+.portada .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
-.main .portada .container .col {
+.portada .container .col {
   width: 50%;
 }
-.main .portada .container .col.izq {
+.portada .container .col.izq {
   box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
-.main .portada .container .col .titulo-seccion {
+.portada .container .col .titulo-seccion {
   padding: 3.125rem;
   padding-right: 0;
 }
-.main .portada .container .col .titulo-seccion h2 {
+.portada .container .col .titulo-seccion h2 {
   color: #fff;
   font-family: 'Raleway', Sans-Serif;
 }
-.main .portada .container .col .titulo-seccion p {
+.portada .container .col .titulo-seccion p {
   color: rgba(255, 255, 255, 0.7);
   padding-bottom: 1.125rem;
   font-size: 1.125rem;
   line-height: 1.75;
 }
-.main .portada .container .col .titulo-seccion p:last-child {
+.portada .container .col .titulo-seccion p:last-child {
   padding-bottom: 0;
 }
-.main .portada .container .col .slider {
+.portada .container .col .slider {
   width: 400%;
   display: flex;
 }
-.main .portada .container .col .slider .slide {
+.portada .container .col .slider .slide {
   width: 100%;
   min-height: 400px;
   background-size: cover;
   background-position: center;
 }
-.main .portada .container .col .slider .slide.foto1 {
+.portada .container .col .slider .slide.foto1 {
   background-image: url('../img/slider_1.jpg');
 }
-.main .portada .container .col .slider .slide.foto2 {
+.portada .container .col .slider .slide.foto2 {
   background-image: url('../img/slider_2.jpg');
 }
-.main .portada .container .col .slider .slide.foto3 {
+.portada .container .col .slider .slide.foto3 {
   background-image: url('../img/slider_3.jpg');
 }
-.main .portada .container .col .slider .slide.foto4 {
+.portada .container .col .slider .slide.foto4 {
   background-image: url('../img/slider_4.jpg');
 }
-.main .nosotros {
+/* End Portada */
+/* Nosotros */
+.nosotros {
   padding: 5.625rem 0;
 }
-.main .nosotros .container {
+.nosotros .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.main .nosotros .container .col.izq {
+.nosotros .container .col.izq {
   width: 30%;
   border-right: 1px solid #1FC742;
   display: flex;
   align-items: center;
   padding-right: 5%;
 }
-.main .nosotros .container .col.der {
+.nosotros .container .col.der {
   width: 70%;
   padding-left: 5%;
 }
-.main .nosotros .container .col.der .texto p {
+.nosotros .container .col.der .texto p {
   font-size: 1.125rem;
   line-height: 1.75;
   color: #777;
 }
-.main .atributos {
+/* End Nosotros */
+/* Atributos */
+.atributos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.main .atributos .col {
+.atributos .col {
   width: 50%;
   background: #141618;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
 }
-.main .atributos .col .foto {
+.atributos .col .foto {
   background-size: cover;
   background-position: center;
   width: 50%;
 }
-.main .atributos .col .foto.izq {
+.atributos .col .foto.izq {
   background-image: url('../img/feature_1.jpg');
   background-position: left;
 }
-.main .atributos .col .foto.der {
+.atributos .col .foto.der {
   background-image: url('../img/feature_3.jpg');
   opacity: 0.8;
 }
-.main .atributos .col .foto .overlay {
+.atributos .col .foto .overlay {
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -309,45 +302,45 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.main .atributos .col .foto .overlay:hover {
+.atributos .col .foto .overlay:hover {
   opacity: 1;
 }
-.main .atributos .col .foto .overlay i {
+.atributos .col .foto .overlay i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5625rem;
 }
-.main .atributos .col .texto {
+.atributos .col .texto {
   width: 50%;
   padding: 3.375rem;
 }
-.main .atributos .col .texto h2 {
+.atributos .col .texto h2 {
   font-size: 1.8125rem;
   font-weight: 400;
   line-height: 2.6875rem;
   margin-bottom: 1.125rem;
 }
-.main .atributos .col .texto p {
+.atributos .col .texto p {
   font-size: 0.9375rem;
   line-height: 1.75;
 }
-.main .atributos .col .foto-full {
+.atributos .col .foto-full {
   width: 100%;
   min-height: 15.25rem;
   background-size: cover;
   background-position: center;
 }
-.main .atributos .col .foto-full.izq {
+.atributos .col .foto-full.izq {
   background-image: url('../img/feature_2.jpg');
   opacity: 0.8;
 }
-.main .atributos .col .foto-full.der {
+.atributos .col .foto-full.der {
   background-image: url('../img/feature_4.jpg');
   opacity: 0.8;
 }
-.main .atributos .col .foto-full .overlay {
+.atributos .col .foto-full .overlay {
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -358,26 +351,28 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.main .atributos .col .foto-full .overlay:hover {
+.atributos .col .foto-full .overlay:hover {
   opacity: 1;
 }
-.main .atributos .col .foto-full .overlay i {
+.atributos .col .foto-full .overlay i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5625rem;
 }
-.main .eventos-dias {
+/* End Atributos */
+/* Los eventos por días */
+.eventos-dias {
   padding: 5.625rem 0;
 }
-.main .eventos-dias .container .titulo-seccion h2 {
+.eventos-dias .container .titulo-seccion h2 {
   text-align: center;
 }
-.main .eventos-dias .container .contenedor-dias {
+.eventos-dias .container .contenedor-dias {
   margin-top: 2.5rem;
 }
-.main .eventos-dias .container .contenedor-dias .encabezado {
+.eventos-dias .container .contenedor-dias .encabezado {
   font-weight: 600;
   font-family: 'Raleway', Sans-Serif;
   letter-spacing: 0.1em;
@@ -386,7 +381,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   display: flex;
   justify-content: center;
 }
-.main .eventos-dias .container .contenedor-dias .encabezado li a {
+.eventos-dias .container .contenedor-dias .encabezado li a {
   font-size: 0.75rem;
   padding: 0 1.4375rem 1.125rem 1.475rem;
   display: block;
@@ -396,30 +391,30 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
 }
-.main .eventos-dias .container .contenedor-dias .encabezado li a:hover {
+.eventos-dias .container .contenedor-dias .encabezado li a:hover {
   color: #025b18;
 }
-.main .eventos-dias .container .contenedor-dias .encabezado li.active a {
+.eventos-dias .container .contenedor-dias .encabezado li.active a {
   color: #025b18;
   border-bottom: 2px solid #025b18;
 }
-.main .eventos-dias .container .contenedor-dias .contenido {
+.eventos-dias .container .contenedor-dias .contenido {
   max-width: 50rem;
   margin: 0 auto;
   margin-top: 2.5rem;
   border: 6px double #1FC742;
   padding: 0 2.25rem;
 }
-.main .eventos-dias .container .contenedor-dias .contenido > div {
+.eventos-dias .container .contenedor-dias .contenido > div {
   display: none;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.main .eventos-dias .container .contenedor-dias .contenido .active {
+.eventos-dias .container .contenedor-dias .contenido .active {
   display: block;
 }
-.main .eventos-dias .container .contenedor-dias .contenido .item {
+.eventos-dias .container .contenedor-dias .contenido .item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -427,24 +422,26 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   padding: 2.25rem 0;
   border-bottom: 1px solid #025b18;
 }
-.main .eventos-dias .container .contenedor-dias .contenido .item .col.izq {
+.eventos-dias .container .contenedor-dias .contenido .item .col.izq {
   width: 70%;
 }
-.main .eventos-dias .container .contenedor-dias .contenido .item .col.izq h3 {
+.eventos-dias .container .contenedor-dias .contenido .item .col.izq h3 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0.625rem;
 }
-.main .eventos-dias .container .contenedor-dias .contenido .item .col.izq p {
+.eventos-dias .container .contenedor-dias .contenido .item .col.izq p {
   font-size: 1rem;
   color: #777;
 }
-.main .eventos-dias .container .contenedor-dias .contenido .item .col.der {
+.eventos-dias .container .contenedor-dias .contenido .item .col.der {
   width: 30%;
   text-align: center;
   font-size: 2.1875rem;
 }
-.main .contacto .datos {
+/* End Los eventos por días */
+/* Contacto */
+.contacto .datos {
   padding: 4.625rem 0 11.875rem 0;
   position: relative;
   background-image: url('../img/contacto-bg.jpg');
@@ -452,7 +449,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   background-position: center;
   background-repeat: no-repeat;
 }
-.main .contacto .datos .overlay {
+.contacto .datos .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -460,32 +457,32 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   top: 0;
   z-index: 1;
 }
-.main .contacto .datos .container {
+.contacto .datos .container {
   position: relative;
   z-index: 2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main .contacto .datos .container .blurb {
+.contacto .datos .container .blurb {
   background: #fff;
   border: 6px double #1FC742;
   padding: 2.25rem;
   text-align: center;
   width: 25%;
 }
-.main .contacto .datos .container .blurb h3 {
+.contacto .datos .container .blurb h3 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.6875rem;
   margin-bottom: 1.125rem;
   border-bottom: 1px solid #eaeaea;
 }
-.main .contacto .datos .container .blurb p {
+.contacto .datos .container .blurb p {
   font-size: 1rem;
   color: #777;
 }
-.main .contacto .formulario {
+.contacto .formulario {
   position: relative;
   z-index: 3;
   background: #fff;
@@ -495,16 +492,16 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   margin-top: -6.25rem;
   width: 90%;
 }
-.main .contacto .formulario .titulo-seccion h2 {
+.contacto .formulario .titulo-seccion h2 {
   text-align: center;
 }
-.main .contacto .formulario .formulario_contacto .input-group {
+.contacto .formulario .formulario_contacto .input-group {
   position: relative;
   margin-bottom: 2rem;
 }
-.main .contacto .formulario .formulario_contacto .input-group input[type="text"],
-.main .contacto .formulario .formulario_contacto .input-group input[type="email"],
-.main .contacto .formulario .formulario_contacto .input-group textarea {
+.contacto .formulario .formulario_contacto .input-group input[type="text"],
+.contacto .formulario .formulario_contacto .input-group input[type="email"],
+.contacto .formulario .formulario_contacto .input-group textarea {
   font-family: 'Raleway', Sans-Serif;
   font-size: 1rem;
   color: #303133;
@@ -516,22 +513,22 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   border-bottom: 2px solid rgba(2, 91, 24, 0.5);
   vertical-align: top;
 }
-.main .contacto .formulario .formulario_contacto .input-group input[type="text"]:focus,
-.main .contacto .formulario .formulario_contacto .input-group input[type="email"]:focus,
-.main .contacto .formulario .formulario_contacto .input-group textarea:focus {
+.contacto .formulario .formulario_contacto .input-group input[type="text"]:focus,
+.contacto .formulario .formulario_contacto .input-group input[type="email"]:focus,
+.contacto .formulario .formulario_contacto .input-group textarea:focus {
   border-bottom: 2px solid #025b18;
 }
-.main .contacto .formulario .formulario_contacto .input-group textarea {
+.contacto .formulario .formulario_contacto .input-group textarea {
   max-width: 100%;
   max-height: 10.25rem;
   min-height: 5.125rem;
   min-width: 100%;
 }
-.main .contacto .formulario .formulario_contacto .input-group label {
+.contacto .formulario .formulario_contacto .input-group label {
   color: #777;
   font-family: 'Raleway', Sans-Serif;
 }
-.main .contacto .formulario .formulario_contacto .input-group label.label {
+.contacto .formulario .formulario_contacto .input-group label.label {
   position: absolute;
   top: 1rem;
   left: 0;
@@ -542,20 +539,20 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.main .contacto .formulario .formulario_contacto .input-group label.label.active {
+.contacto .formulario .formulario_contacto .input-group label.label.active {
   top: -0.75rem;
   margin-left: 0;
   font-size: 0.75rem;
   line-height: 0.75rem;
   color: #777;
 }
-.main .contacto .formulario .formulario_contacto .input-group .error {
+.contacto .formulario .formulario_contacto .input-group .error {
   position: absolute;
   color: #ff3b3b;
   font-family: 'Raleway', Sans-Serif;
   font-size: 0.875rem;
 }
-.main .contacto .formulario .formulario_contacto input[type="submit"] {
+.contacto .formulario .formulario_contacto input[type="submit"] {
   font-family: 'Raleway', Sans-Serif;
   background: #025b18;
   color: #fff;
@@ -570,9 +567,10 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   outline: none;
   transition: all 0.3s ease;
 }
-.main .contacto .formulario .formulario_contacto input[type="submit"]:hover {
+.contacto .formulario .formulario_contacto input[type="submit"]:hover {
   background: #01290b;
 }
+/* End Contacto */
 /*--------------------------*/
 /* Pie de página */
 /*--------------------------*/

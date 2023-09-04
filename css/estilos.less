@@ -1,8 +1,11 @@
-/*---------------------------*/
-/* Variables */
-/*---------------------------*/
+/**************************************************/
+/* Hecho por Oscar Israel Román Quispe. 2021-2023 */
+/**************************************************/
+//------------------------------
+// Variables //
+///-----------------------------
 
-/*Colores*/
+// Colores //
 @negro-custom: #141618;
 @blanco: #fff;
 @texto-oscuro: #303133;
@@ -11,14 +14,13 @@
 @verde-claro: #1FC742;
 @gris-claro: #eaeaea; 
 
-/*Fuentes*/
+// Fuentes //
 @fuente-principal: 'Enriqueta', serif;
 @fuente-titulo: 'Raleway', Sans-Serif;
 
-/*--------------------------*/  
-/*Generales*/
 /*--------------------------*/
-
+/* Generales */
+/*--------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -172,8 +174,6 @@ header {
 
     }
 
-    // Siempre es bueno preferir 'rem' sobre 'px' para facilitar los cambios posteriores que el cliente pida sobre los tamaños de los elementos.
-
     .menu-bar-movil {
         background: @blanco;
         width: 100%;
@@ -238,483 +238,483 @@ header {
 
 .main {
     margin-top: 5.875rem;
+}
 
-    /* Portada */
-    .portada {
-        background: @negro-custom;
-        padding: 5.625rem 0;
+/* Portada */
+.portada {
+    background: @negro-custom;
+    padding: 5.625rem 0;
 
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-
-            .col{
-                width: 50%;
-
-                &.izq {
-                    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
-                    overflow: hidden;
-                }
-
-                .titulo-seccion {
-                    padding: 3.125rem;
-                    padding-right: 0;
-
-                    h2 {
-                        color: @blanco;
-                        font-family: @fuente-titulo;
-                    }
-
-                    p {
-                        color: fade(@blanco, 70%);
-                        padding-bottom: 1.125rem;
-                        font-size: 1.125rem;
-                        line-height: 1.75;
-
-                        &:last-child {
-                            padding-bottom: 0;
-                        }
-                    }
-                }
-
-                .slider {
-                    width: 400%;
-                    display: flex;
-
-                    .slide {
-                        width: 100%;
-                        min-height: 400px;
-                        background-size: cover;
-                        background-position: center;
-
-                        &.foto1{
-                            background-image: url('../img/slider_1.jpg');
-                        }
-
-                        &.foto2{
-                            background-image: url('../img/slider_2.jpg');
-                        }
-
-                        &.foto3{
-                            background-image: url('../img/slider_3.jpg');
-                        }
-
-                        &.foto4{
-                            background-image: url('../img/slider_4.jpg');
-                        }
-                    }
-                }
-
-            }
-        }      
-    } /* Portada */
-
-    /* Nosotros */
-    .nosotros {
-        padding: 5.625rem 0;
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            .col.izq {
-                width: 30%;
-                border-right: 1px solid @verde-claro;
-                display: flex;
-                align-items: center;
-                padding-right: 5%;
-            }
-
-            .col.der {
-                width: 70%;
-                padding-left: 5%;
-
-                .texto {
-                    p {
-                        font-size: 1.125rem;
-                        line-height: 1.75;
-                        color: @texto-claro;
-                    }
-                }
-            }
-        }
-
-    } /* Nosotros */
-
-    /* Atributos */
-    .atributos {
+    .container {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        align-items: center;
 
         .col{
             width: 50%;
-            background: @negro-custom;
-            color: @blanco;
-            display: flex;
-            flex-wrap: wrap;
 
-            .foto {
-                background-size: cover;
-                background-position: center;
-                width: 50%;
-
-                &.izq {
-                    background-image: url('../img/feature_1.jpg');
-                    background-position: left;
-                }
-
-                &.der {
-                    background-image: url('../img/feature_3.jpg');
-                    opacity: 0.8;
-                }
-
-                .overlay {
-                    opacity: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: fade(@negro-custom, 40%);
-                    position: relative;
-                    cursor: pointer;
-                    -webkit-transition: all .3s ease;
-                    -o-transition: all .3s ease;
-                    transition: all .3s ease;
-                
-                    &:hover {
-                        opacity: 1;
-                    }
-
-                    i {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        font-size: 1.5625rem;
-                    }
-                }
-
+            &.izq {
+                box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
+                overflow: hidden;
             }
 
-            .texto {
-                width: 50%;
-                padding: 3.375rem;
+            .titulo-seccion {
+                padding: 3.125rem;
+                padding-right: 0;
+
                 h2 {
-                    font-size: 1.8125rem;
-                    font-weight: 400;
-                    line-height: 2.6875rem;
-                    margin-bottom: 1.125rem;
+                    color: @blanco;
+                    font-family: @fuente-titulo;
                 }
 
                 p {
-                    font-size: 0.9375rem;
+                    color: fade(@blanco, 70%);
+                    padding-bottom: 1.125rem;
+                    font-size: 1.125rem;
                     line-height: 1.75;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
                 }
             }
 
-            .foto-full {
-                width: 100%;
-                min-height: 15.25rem;
-                background-size: cover;
-                background-position: center;
-            
+            .slider {
+                width: 400%;
+                display: flex;
 
-                &.izq {
-                    background-image: url('../img/feature_2.jpg');
-                    opacity: 0.8;
-                }
-
-                &.der {
-                    background-image: url('../img/feature_4.jpg');
-                    opacity: 0.8;
-                }
-
-                .overlay {
-                    opacity: 0;
+                .slide {
                     width: 100%;
-                    height: 100%;
-                    background: fade(@negro-custom, 40%);
-                    position: relative;
-                    cursor: pointer;
-                    -webkit-transition: all .3s ease;
-                    -o-transition: all .3s ease;
-                    transition: all .3s ease;
-                
-                    &:hover {
-                        opacity: 1;
+                    min-height: 400px;
+                    background-size: cover;
+                    background-position: center;
+
+                    &.foto1{
+                        background-image: url('../img/slider_1.jpg');
                     }
 
-                    i {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        font-size: 1.5625rem;
+                    &.foto2{
+                        background-image: url('../img/slider_2.jpg');
                     }
+
+                    &.foto3{
+                        background-image: url('../img/slider_3.jpg');
+                    }
+
+                    &.foto4{
+                        background-image: url('../img/slider_4.jpg');
+                    }
+                }
+            }
+
+        }
+    }      
+} /* End Portada */
+
+/* Nosotros */
+.nosotros {
+    padding: 5.625rem 0;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .col.izq {
+            width: 30%;
+            border-right: 1px solid @verde-claro;
+            display: flex;
+            align-items: center;
+            padding-right: 5%;
+        }
+
+        .col.der {
+            width: 70%;
+            padding-left: 5%;
+
+            .texto {
+                p {
+                    font-size: 1.125rem;
+                    line-height: 1.75;
+                    color: @texto-claro;
                 }
             }
         }
-    } /* Atributos */
+    }
 
-    /* Los eventos por días */
-    .eventos-dias {
-        padding: 5.625rem 0;
+} /* End Nosotros */
 
-        .container {
-            .titulo-seccion {
-                h2 {
-                    text-align: center;
+/* Atributos */
+.atributos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .col{
+        width: 50%;
+        background: @negro-custom;
+        color: @blanco;
+        display: flex;
+        flex-wrap: wrap;
+
+        .foto {
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+
+            &.izq {
+                background-image: url('../img/feature_1.jpg');
+                background-position: left;
+            }
+
+            &.der {
+                background-image: url('../img/feature_3.jpg');
+                opacity: 0.8;
+            }
+
+            .overlay {
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                background: fade(@negro-custom, 40%);
+                position: relative;
+                cursor: pointer;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+            
+                &:hover {
+                    opacity: 1;
+                }
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.5625rem;
                 }
             }
 
-            .contenedor-dias {
-                margin-top: 2.5rem;
+        }
 
-                .encabezado {
-                    font-weight: 600;
-                    font-family: @fuente-titulo;
-                    letter-spacing: 0.1em;
-                    text-transform: uppercase;
-                    list-style: none;
-                    display: flex;
-                    justify-content: center;
+        .texto {
+            width: 50%;
+            padding: 3.375rem;
+            h2 {
+                font-size: 1.8125rem;
+                font-weight: 400;
+                line-height: 2.6875rem;
+                margin-bottom: 1.125rem;
+            }
 
-                    li {
-                        a {
-                            font-size: 0.75rem;
-                            padding: 0 1.4375rem 1.125rem 1.475rem;
-                            display: block;
-                            cursor: pointer;
-                            transition: all .3s ease;
-                            -webkit-transition: all .3s ease;
-                            -o-transition: all .3s ease;
-                            transition: all .3s ease;
-                            border-bottom: 2px solid transparent;
+            p {
+                font-size: 0.9375rem;
+                line-height: 1.75;
+            }
+        }
 
-                            &:hover {
-                                color: @verde;
-                            }
-                        }
+        .foto-full {
+            width: 100%;
+            min-height: 15.25rem;
+            background-size: cover;
+            background-position: center;
+        
 
-                        &.active {
-                            a {
-                                color: @verde;
-                                border-bottom: 2px solid @verde;
-                            }
-                        }
-                    }
-                
+            &.izq {
+                background-image: url('../img/feature_2.jpg');
+                opacity: 0.8;
+            }
+
+            &.der {
+                background-image: url('../img/feature_4.jpg');
+                opacity: 0.8;
+            }
+
+            .overlay {
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                background: fade(@negro-custom, 40%);
+                position: relative;
+                cursor: pointer;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+            
+                &:hover {
+                    opacity: 1;
                 }
 
-                .contenido {
-                    max-width: 50rem;
-                    margin: 0 auto;
-                    margin-top: 2.5rem;
-                    border: 6px double @verde-claro;
-                    padding: 0 2.25rem;
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.5625rem;
+                }
+            }
+        }
+    }
+} /* End Atributos */
 
-                    >div {
-                        display: none;
+/* Los eventos por días */
+.eventos-dias {
+    padding: 5.625rem 0;
+
+    .container {
+        .titulo-seccion {
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .contenedor-dias {
+            margin-top: 2.5rem;
+
+            .encabezado {
+                font-weight: 600;
+                font-family: @fuente-titulo;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+
+                li {
+                    a {
+                        font-size: 0.75rem;
+                        padding: 0 1.4375rem 1.125rem 1.475rem;
+                        display: block;
+                        cursor: pointer;
+                        transition: all .3s ease;
                         -webkit-transition: all .3s ease;
                         -o-transition: all .3s ease;
                         transition: all .3s ease;
-                    }
+                        border-bottom: 2px solid transparent;
 
-                    .active {
-                        display: block;
-                    }
-
-                    .item {
-                        display: flex;
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        padding: 2.25rem 0;
-                        border-bottom: 1px solid @verde;
-
-                        .col.izq {
-                            width: 70%;
-
-                            h3 {
-                                font-size: 1.5rem;
-                                font-weight: 400;
-                                margin-bottom: 0.625rem;
-                            }
-
-                            p {
-                                font-size: 1rem;
-                                color: #777;
-                            }                           
-                        }
-
-                        .col.der{
-                            width: 30%;
-                            text-align: center;
-                            font-size: 2.1875rem;
+                        &:hover {
+                            color: @verde;
                         }
                     }
-                }                
-            }
-        }
 
-    } /* Los eventos por días */
-
-    /* Contacto */
-
-    .contacto {
-
-        .datos {
-            padding: 4.625rem 0 11.875rem 0;
-            position: relative;
-            background-image: url('../img/contacto-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            .overlay {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background: fade(@negro-custom, 30%);
-                top: 0;
-                z-index: 1;
-            }
-
-            .container {
-                position: relative;
-                z-index: 2;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-
-                .blurb {
-                    background: @blanco;
-                    border: 6px double @verde-claro;
-                    padding: 2.25rem;
-                    text-align: center;
-                    width: 25%;
-
-                    h3 {
-                        font-size: 1.5rem;
-                        font-weight: 400;
-                        line-height: 2.6875rem;
-                        margin-bottom: 1.125rem;
-                        border-bottom: 1px solid @gris-claro;
-                    }
-
-                    p {
-                        font-size: 1rem;
-                        color: #777;
-                    }
-                }
-            }
-        }
-
-        .formulario {
-            position: relative;
-            z-index: 3;
-            background: @blanco;
-            max-width: 40.625rem;
-            margin: 0 auto;
-            padding: 2.25rem;
-            margin-top: -6.25rem;
-            width: 90%;
-
-            .titulo-seccion {
-                h2 {
-                    text-align: center;
-                }
-            }
-
-            .formulario_contacto {
-                .input-group {
-                    position: relative;
-                    margin-bottom: 2rem;
-
-                    input[type="text"],
-                    input[type="email"],
-                    textarea {
-                        font-family: @fuente-titulo;
-                        font-size: 1rem;
-                        color: @texto-oscuro;
-                        width: 100%;
-                        outline: none;
-                        padding: 0.9375rem 0;
-                        background: none;
-                        border: none;
-                        border-bottom: 2px solid fade(@verde, 50%);
-                        vertical-align: top;
-
-                        &:focus {
+                    &.active {
+                        a {
+                            color: @verde;
                             border-bottom: 2px solid @verde;
                         }
                     }
+                }
+            
+            }
 
-                    textarea {
-                        max-width: 100%;
-                        max-height: 10.25rem;
-                        min-height: 5.125rem;
-                        min-width: 100%;
-                    }
+            .contenido {
+                max-width: 50rem;
+                margin: 0 auto;
+                margin-top: 2.5rem;
+                border: 6px double @verde-claro;
+                padding: 0 2.25rem;
 
-                    label {
-                        color: @texto-claro;
-                        font-family: @fuente-titulo;
-
-                        &.label {
-                            position: absolute;
-                            top: 1rem;
-                            left: 0;
-                            font-size: 1rem;
-                            line-height: 1rem;
-                            margin-left: 1rem;
-                            -webkit-transition: all .3s ease;
-                            -o-transition: all .3s ease;
-                            transition: all .3s ease;
-
-                            &.active {
-                                top: -0.75rem;
-                                margin-left: 0;
-                                font-size: 0.75rem;
-                                line-height: 0.75rem;
-                                color: @texto-claro;
-                            }
-                        }
-                    }
-
-                    .error {
-                        position: absolute;
-                        color: rgb(255,59,59);
-                        font-family: @fuente-titulo;
-                        font-size: 0.875rem;
-                    }
+                >div {
+                    display: none;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
                 }
 
-                input[type="submit"] {
-                    font-family: @fuente-titulo;
-                    background: @verde;
-                    color: @blanco;
-                    border-radius: 1px;
-                    border: 2px solid @blanco;
-                    cursor: pointer;
+                .active {
                     display: block;
-                    margin: 0 auto;
-                    margin-top: 3.125rem;
-                    padding: 0.9375rem;
-                    width: 20%;
-                    outline: none;
-                    transition: all .3s ease;
+                }
 
-                    &:hover {
-                        background: darken(@verde, 10%);
+                .item {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    padding: 2.25rem 0;
+                    border-bottom: 1px solid @verde;
+
+                    .col.izq {
+                        width: 70%;
+
+                        h3 {
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            margin-bottom: 0.625rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                            color: #777;
+                        }                           
                     }
+
+                    .col.der{
+                        width: 30%;
+                        text-align: center;
+                        font-size: 2.1875rem;
+                    }
+                }
+            }                
+        }
+    }
+
+} /* End Los eventos por días */
+
+/* Contacto */
+
+.contacto {
+
+    .datos {
+        padding: 4.625rem 0 11.875rem 0;
+        position: relative;
+        background-image: url('../img/contacto-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: fade(@negro-custom, 30%);
+            top: 0;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .blurb {
+                background: @blanco;
+                border: 6px double @verde-claro;
+                padding: 2.25rem;
+                text-align: center;
+                width: 25%;
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 2.6875rem;
+                    margin-bottom: 1.125rem;
+                    border-bottom: 1px solid @gris-claro;
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: #777;
                 }
             }
         }
-    } /* Contacto */
-} 
+    }
+
+    .formulario {
+        position: relative;
+        z-index: 3;
+        background: @blanco;
+        max-width: 40.625rem;
+        margin: 0 auto;
+        padding: 2.25rem;
+        margin-top: -6.25rem;
+        width: 90%;
+
+        .titulo-seccion {
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .formulario_contacto {
+            .input-group {
+                position: relative;
+                margin-bottom: 2rem;
+
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    font-family: @fuente-titulo;
+                    font-size: 1rem;
+                    color: @texto-oscuro;
+                    width: 100%;
+                    outline: none;
+                    padding: 0.9375rem 0;
+                    background: none;
+                    border: none;
+                    border-bottom: 2px solid fade(@verde, 50%);
+                    vertical-align: top;
+
+                    &:focus {
+                        border-bottom: 2px solid @verde;
+                    }
+                }
+
+                textarea {
+                    max-width: 100%;
+                    max-height: 10.25rem;
+                    min-height: 5.125rem;
+                    min-width: 100%;
+                }
+
+                label {
+                    color: @texto-claro;
+                    font-family: @fuente-titulo;
+
+                    &.label {
+                        position: absolute;
+                        top: 1rem;
+                        left: 0;
+                        font-size: 1rem;
+                        line-height: 1rem;
+                        margin-left: 1rem;
+                        -webkit-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+                        transition: all .3s ease;
+
+                        &.active {
+                            top: -0.75rem;
+                            margin-left: 0;
+                            font-size: 0.75rem;
+                            line-height: 0.75rem;
+                            color: @texto-claro;
+                        }
+                    }
+                }
+
+                .error {
+                    position: absolute;
+                    color: rgb(255,59,59);
+                    font-family: @fuente-titulo;
+                    font-size: 0.875rem;
+                }
+            }
+
+            input[type="submit"] {
+                font-family: @fuente-titulo;
+                background: @verde;
+                color: @blanco;
+                border-radius: 1px;
+                border: 2px solid @blanco;
+                cursor: pointer;
+                display: block;
+                margin: 0 auto;
+                margin-top: 3.125rem;
+                padding: 0.9375rem;
+                width: 20%;
+                outline: none;
+                transition: all .3s ease;
+
+                &:hover {
+                    background: darken(@verde, 10%);
+                }
+            }
+        }
+    }
+} /* End Contacto */
 
 /*--------------------------*/
 /* Pie de página */
