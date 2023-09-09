@@ -1,8 +1,4 @@
-(function(){
-
-window.addEventListener("load", function (){
+window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
     loader.classList.add("oculto"); // class "loader oculto"
 });
-
-}())

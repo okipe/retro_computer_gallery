@@ -1,46 +1,38 @@
-(function(){
-// Esto protege a la función de modificaciones
+// Encapsulamos el código para evitar variables globales
+(function () {
 
-
-// Propiedades Slider
-var propSlider = {
-    slider: document.getElementById('slider'),
-    // Aquí seleccionamos el id del slider.
-    primerSlide: null
-}
-
-// Metodos slider
-var metSlider = {
-    inicio: function () {
-        setInterval(metSlider.moverSlide, 4000);
-        // Esto hace funcionar al slider de manera automática.
-    },
-    moverSlide: function () {
-        propSlider.slider.style.transition = 'all 1s ease';
-        propSlider.slider.style.marginLeft = '-100%';
-        // Esto moverá el slide al -100%"
-
-        setTimeout(function () {
-            propSlider.primerSlide = propSlider.slider.firstElementChild;            
-            // Esto mostrará el primer elemento hijo.
-
-            propSlider.slider.appendChild(propSlider.primerSlide);
-            // Esto moverá el primero al último elemento
-
-            propSlider.slider.style.transition = 'unset';
-            // Esto elimina el movimiento del slide en el cambio de orden de fotos del primero al último (margin-left: -100%)
-
-            propSlider.slider.style.marginLeft = '0%';
-            // Esto colocará el margin left a 0
-
-        }, 1000);
-        // Esto permitirá que el cambio de imagen (primero pasa al último) sea después de hecha la transición  (1000 milisegundos).
+    // Propiedades del Slider
+    const propSlider = {
+        slider: document.getElementById('slider'),
+        primerSlide: null
     }
 
-}
+    // Metodos del slider
+    const metSlider = {
+        inicio: function () {
+            setInterval(metSlider.moverSlide, 4000);// 4 segundos
+        },
 
-metSlider.inicio();
-// Esto hace iniciar al método Inicio
+        moverSlide() {
+            // Usamos destructuración para acceder a las propiedades del objeto propSlider
+            const { slider } = propSlider;
+            slider.style.transition = 'all 1s ease';
+            // Esto moverá el slide al -100% (siguiente slide).
+            slider.style.marginLeft = '-100%';
 
+            setTimeout(() => {
+                propSlider.primerSlide = slider.firstElementChild;
+                // Esto moverá el primero al último elemento
+                slider.appendChild(propSlider.primerSlide);
+                // Elimina el movimiento del slide del primero al último (margin-left: -100%)
+                slider.style.transition = 'unset';
+                // Después de la animación, movemos el primer slide al final y restablecemos la posición.
+                slider.style.marginLeft = '0%';
+            }, 1000);
+        }
+    }
+
+    // Esto hace iniciar al método Inicio
+    metSlider.inicio();
 
 }())
