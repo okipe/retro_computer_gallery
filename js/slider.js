@@ -1,5 +1,4 @@
-// Encapsulamos el código para evitar variables globales
-(function () {
+(() => {
 
     // Propiedades del Slider
     const propSlider = {
@@ -35,4 +34,4 @@
     // Esto hace iniciar al método Inicio
     metSlider.inicio();
 
-}())
+})();
