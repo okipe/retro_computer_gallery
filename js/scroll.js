@@ -1,75 +1,69 @@
 (() => {
 
-    // Propiedades relacionadas con el scroll
+    // Propiedades del scroll
     const propScroll = {
-        posicion: window.pageYOffset,
-        scroll_suave: document.getElementsByClassName('scroll-suave'),
-        volver_arriba: document.getElementsByClassName('volver-arriba'),
+        posicion: window.scrollY,
+        scrollSuave: document.getElementsByClassName('scroll-suave'),
+        volverArriba: document.getElementsByClassName('volver-arriba'),
         destino: null,
-        seccion_distancia: null,
+        seccionDistancia: null,
         intervalo: null
     }  
 
 
-    // Objeto con métodos de efecto scroll
+    // Objeto con métodos del scroll
     const metScroll = {
-        inicio: function () {
-            for (var i = 0; i < propScroll.scroll_suave.length; i++) {
-                propScroll.scroll_suave[i].addEventListener('click', metScroll.moverse);
-                // Esto es para que haya scroll del menú a un ancla en específico.
+        inicio: () => {
+            for (var i = 0; i < propScroll.scrollSuave.length; i++) {
+                propScroll.scrollSuave[i].addEventListener('click', metScroll.moverse);
             }
 
-            for (var i = 0; i < propScroll.volver_arriba.length; i++) {
-                propScroll.volver_arriba[i].addEventListener('click', metScroll.subir);
-                // Con esto, se da la función volver arriba.
+            for (var i = 0; i < propScroll.volverArriba.length; i++) {
+                propScroll.volverArriba[i].addEventListener('click', metScroll.subir);
             }
         },
 
-        moverse: function (e) {
+        // Hacer suave a la animación
+        moverse(e) {
+            // Evita que el enlace se comporte como un enlace normal (scroll instantáneo)
             e.preventDefault();
             clearInterval(propScroll.intervalo);
-            // Esto es para evitar conflicto cuando hacemos clic en los elementos del menú varias veces
             propScroll.destino = this.getAttribute('href');
-            propScroll.seccion_distancia = document.querySelector(propScroll.destino).offsetTop - 94;
-            // Con esto esto midiendo la distancia entre el enlace de menú y la parte superior del elemento en cuestión.
+            // Midiendo la distancia entre el enlace de menú y el elementodestino
+            propScroll.seccionDistancia = document.querySelector(propScroll.destino).offsetTop - 94;
             
-            propScroll.posicion = window.pageYOffset;
+            propScroll.posicion = window.scrollY;
             propScroll.intervalo = setInterval(function (){
                 
-                if (propScroll.posicion < propScroll.seccion_distancia) {
-                    // Con esto, se avanzará hacia abajo
-
+                // Con esto, se avanzará hacia abajo. Luego detiene la animación.
+                if (propScroll.posicion < propScroll.seccionDistancia) {
                     propScroll.posicion += 30;
-                    // La velocidad del recorrido
 
-                    if (propScroll.posicion >= propScroll.seccion_distancia) {
+                    if (propScroll.posicion >= propScroll.seccionDistancia) {
                         clearInterval(propScroll.intervalo);
-                        // Esto permite liberar la posición de la pantalla una vez que llegemos al destino
                     }
 
                 } else { 
                     propScroll.posicion -= 30;
-                    if (propScroll.posicion <= propScroll.seccion_distancia) {
+                    if (propScroll.posicion <= propScroll.seccionDistancia) {
                         clearInterval(propScroll.intervalo);
                     }
                 }
 
                 window.scrollTo(0, propScroll.posicion);
-
             }, 15);
-            // Esto es para que calcule desde la última posición, no desde el inicio de la página.
 
         },
 
-        subir: function (e) {
+        subir (e) {
             e.preventDefault();
             clearInterval(propScroll.intervalo);
-            // Esto es para evitar conflicto cuando hacemos clic en los elementos del menú varias veces
-            propScroll.posicion = window.pageYOffset;
+
+            propScroll.posicion = window.scrollY;
             propScroll.intervalo = setInterval(function(){
                 
                 if ( propScroll.posicion > 0 ) {
-                // Esto es para cuando esté ne la posición 0, no haga nada
+                // Esto es para cuando esté en la posición 0, no haga nada
                     propScroll.posicion -= 30;
 
                     if (propScroll.posicion <= 0) {
@@ -77,8 +71,8 @@
                     } 
                     
                 } else {
+                    // Esto devuelve el valor de la función y detiene la animación
                     return;
-                    // Esto devuelve el valor de la función y posibilita navegar libremente despues de hacer clic en "Inici"
                 }
 
                 window.scrollTo(0, propScroll.posicion);
@@ -86,11 +80,8 @@
             
 
             }, 15);
-
         }
-
     }
-
     metScroll.inicio();
 
 })();
