@@ -9,7 +9,7 @@ El proyecto fue creado para el curso **Fundamentos de Javascript**, dictado por 
 
 En un inicio los scripts siguieron las especificaciones ES5 pero posteriormente fueron modernizadas para cumplir con las características de ES6. Cada archivo JS contiene una función específica (por ejemplo loader.js para la animación de carga, slider.js para el slider de fotos, etc.). En gran parte del código, se añadieron comentarios que permiten repasar qué hace cada línea de comando.
 
-![Editor con archivos JavaScript](/img_md/JS_1.png)
+![Editor con archivos JavaScript](/img_md/JS_1-updated.png)
 
 ![Editor con archivos JavaScript](/img_md/JS_2.png)
 
@@ -36,7 +36,7 @@ Versión mobile:
 
 ![Página en versión móvil](/img_md/webpage_mobile.png)
 
-El sitio está [disponible en Github Pages](https://retrocomputer-gallery.surge.sh/)
+El sitio está [disponible en Github Pages](https://okipe.github.io/retro_computer_gallery)
 
 ## Comentarios finales
 El curso representó mi primer acercamiento a Javascript. A continuación, el comentario brindado en mi presentación de Crehana.

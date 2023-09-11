@@ -75,9 +75,7 @@
                     return;
                 }
 
-                window.scrollTo(0, propScroll.posicion);
-
-            
+                window.scrollTo(0, propScroll.posicion);            
 
             }, 15);
         }
